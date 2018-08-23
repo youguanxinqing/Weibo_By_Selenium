@@ -12,7 +12,7 @@
 
 ## 注意
 整个过程中需要注意的地方：
-**注意1**：微博每页的数据并非直接全部呈现，当内容比较多时，需要下拉滑动条进行数据的加载
+**注意1**：微博每页的数据并非直接全部呈现，当内容比较多时，需要下拉滑动条进行数据的加载 
 ![](https://i.imgur.com/fylwWEa.png)
 控制浏览器下拉代码：
 ```python
@@ -20,7 +20,7 @@ browser.execute_script("window.scrollTo(0, document.body.scrollHeight)")
 ```
 （实际是执行了js语句）
 
-**注意2**：尽管显示微博页数只有32，当当你访问page=100的时候，依然可以得到渲染后的页面，只是这个页面没有数据
+**注意2**：尽管显示微博页数只有32，当当你访问page=100的时候，依然可以得到渲染后的页面，只是这个页面没有数据 
 ![](https://i.imgur.com/SplaTRV.png)
 
 我做了最笨也是最简单的处理，以页数作为循环次数
@@ -29,7 +29,7 @@ for page in range(1, PAGE+1):
 	...
 ```
 
-**注意3**：当转发或者评论或者点赞为0的时候，微博直接显示文字
+**注意3**：当转发或者评论或者点赞为0的时候，微博直接显示文字 
 ![](https://i.imgur.com/n2Ce8Sy.png)
 
 我是通过正则来清洗的数据，因为这样看起来会有些高大上（逃。。。） 
@@ -43,13 +43,13 @@ for page in range(1, PAGE+1):
 
 
 ## 效果
-程序运行效果如下：
-![](https://i.imgur.com/bF9zmS2.gif)
+程序运行效果如下： 
+![](https://i.imgur.com/bF9zmS2.gif) 
 
-插入mongodb数据格式如下：
-![](https://i.imgur.com/2JcExnK.png)
+插入mongodb数据格式如下： 
+![](https://i.imgur.com/2JcExnK.png) 
 
-本地保存图片如下：
+本地保存图片如下： 
 ![](https://i.imgur.com/9pypsMW.png)
 
 ## 问题
