@@ -47,8 +47,8 @@ for page in range(1, PAGE+1):
 程序运行效果如下： 
 ![](https://i.imgur.com/bF9zmS2.gif) 
 
-插入mongodb数据格式如下： 
-![](https://i.imgur.com/2JcExnK.png) 
+插入mongodb数据格式如下：  
+![](https://i.imgur.com/2JcExnK.png)  
 
 本地保存图片如下： 
 ![](https://i.imgur.com/9pypsMW.png)
