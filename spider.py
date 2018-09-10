@@ -48,7 +48,7 @@ def login(url):
     else:
         try:
             # 如果有弹框，忽略
-            alert = browser.switch_to_alert()
+            alert = browser.switch_to.alert
             alert.dismiss
         except:
             pass
