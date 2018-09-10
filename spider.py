@@ -49,7 +49,7 @@ def login(url):
         try:
             # 如果有弹框，忽略
             alert = browser.switch_to.alert
-            alert.dismiss
+            alert.dismiss()
         except:
             pass
 
